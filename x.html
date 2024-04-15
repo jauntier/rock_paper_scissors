@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="tooplate-little-fashion.css">
+    <style>
+        /* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choices button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.choices button:hover {
+  background-color: #0056b3;
+}
+
+#rock {
+  background-image: url('rock.png'); /* Replace 'rock.png' with your actual image path */
+}
+
+#paper {
+  background-image: url('paper.png'); /* Replace 'paper.png' with your actual image path */
+}
+
+#scissors {
+  background-image: url('scissors.png'); /* Replace 'scissors.png' with your actual image path */
+}
+
+#winner {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+#playerScore,
+#computerScore {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#reset {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background-color: #218838;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="choices">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+        <div class="result">
+            <h2>Result</h2>
+            <p id="winner"></p>
+        </div>
+        <div class="score">
+            <h2>Score</h2>
+            <p>Player: <span id="playerScore">0</span></p>
+            <p>Computer: <span id="computerScore">0</span></p>
+        </div>
+        <button id="reset">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
